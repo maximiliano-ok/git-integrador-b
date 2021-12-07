@@ -14,7 +14,9 @@ function getOnlyGoodMovies(){
  * @returns {Array} of strings
  */
  function getGoodImdbLinks(){
-    //complete with your code
+    // complete with your code
+    return movies.map(item => `https://www.imdb.com/chart/moviemeter/?ref_=nv_mv_mpm${item.imdb_title_id}`);
+   
 }
 
 function main(){
